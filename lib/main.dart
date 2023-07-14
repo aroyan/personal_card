@@ -18,11 +18,12 @@ class MyFirstWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: <Widget>[
               const CircleAvatar(
                 radius: 70,
-                backgroundImage:
-                    NetworkImage('https://placekitten.com/500/500'),
+                backgroundImage: NetworkImage(
+                  'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2022-10/taylor-swift-folklore-jp-221017-2d6e45.jpg',
+                ),
               ),
               const Text(
                 'Taylor Swift',
@@ -30,17 +31,25 @@ class MyFirstWidget extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const Text(
+                'Singer-Songwriter',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
                 ),
               ),
               const Divider(
                 height: 20,
-                thickness: 2,
-                indent: 40,
-                endIndent: 40,
-                color: Colors.black,
+                thickness: 1,
+                indent: 120,
+                endIndent: 120,
+                color: Colors.white,
               ),
               Container(
-                color: Colors.blue.shade700,
+                color: Colors.orange.shade700,
                 padding:
                     const EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0),
                 margin: const EdgeInsets.symmetric(horizontal: 32.0),
@@ -61,7 +70,7 @@ class MyFirstWidget extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.blue.shade700,
+                color: Colors.orange.shade700,
                 padding: const EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 4.0,
